@@ -7,7 +7,7 @@
 <br/>
 
 <div align="center">
-<img src="https://img.shields.io/badge/⚙%20Item%20count%20-%2053%20Best%20practices-blue.svg" alt="150+ Students"> <img src="https://img.shields.io/badge/%F0%9F%93%85%20Last%20update%20-%20Nov%2015%202017-green.svg" alt="Last update: February 15, 2018"> <img src="https://img.shields.io/badge/%E2%9C%94%20Updated%20For%20Version%20-%20Node%208.9-brightgreen.svg" alt="Updated for Node v.8.9">
+<img src="https://img.shields.io/badge/%E2%9A%99%20Students%20So%20Far%20-%20150+%20-blue.svg" alt="150+ Students"> <img src="https://img.shields.io/badge/%F0%9F%93%85%20Last%20update%20-%20Feb%2015%202018-green.svg" alt="Last update: February 15, 2018"> <img src="https://img.shields.io/badge/%E2%9C%94%20Updated%20For%20Version%20-%20Node%208.9-brightgreen.svg" alt="Updated for Node v.8.9">
 	</div>
 
 <br/>
