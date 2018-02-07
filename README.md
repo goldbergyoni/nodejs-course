@@ -1,5 +1,3 @@
-[✔]: assets/images/checkbox-small-blue.png
-
 # Yoni Goldberg - Node.JS Best Practices Course
 
 <h1 align="center">
@@ -30,6 +28,17 @@ Install Node.JS LTS (any 8.9.X version) [from this website](https://nodejs.org/e
 ## ![✔] 2 Ensure Node is installed correctly
 Open your favourite terminal (Windows: command prompt) and type 'NPM verson'. The output should confirm that version 8.9.x is indeed installed
 
-##Slides
+## ![✔] 3 Install IDE (editor)
+I highly recommend using VSCode editor in the course as it's lightweight and has a very rich plugins eco-sysem that we might use during our excercise. Simply visit the [downloads site](https://code.visualstudio.com/download) and choose the edition that suits your operations system. You may opt for any other editor that supports Node debugging and intellisense
+
+## ![✔] 4 Install The following NPM packages
+Most of our excercises rely on few popular backbone packages that we can install aforehand. Open your terminal (Windows: command prompt) and paste the following command:
+```
+npm install express mocha nyc nodemon faker eslint eslint-plugin-node passport jsonschema jsonwebtoken knex socket.io
+```
 
 ##Code Examples
+All the code examples that we run in the classroom [can be found in this Git repository](https://github.com/i0natan/nodebestpractices/tree/course)
+
+##Slides
+Feel free to approach me (here, by email or via Twitter) to get a copy of the course slides
