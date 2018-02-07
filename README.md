@@ -1,4 +1,4 @@
-# Yoni Goldberg - Node.JS Best Practices Course
+# Yoni Goldberg - Node.JS Course
 
 <h1 align="center">
   <img src="git-banner.jpg" alt="Node.js Best Practices" />
