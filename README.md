@@ -12,9 +12,6 @@
 
 <br/>
 
- [![nodepractices](/assets/images/twitter-s.png)](https://twitter.com/nodepractices/) **Twitter!** [**@nodepractices**](https://twitter.com/nodepractices/)
- <br/>
-
 # Welcome To My Node.JS Course!
 This repository holds various materials, demos and instructions for my Node.JS course
 
