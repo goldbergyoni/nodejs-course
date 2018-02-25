@@ -37,7 +37,7 @@ npm install express mocha nyc nodemon faker eslint eslint-plugin-node passport j
 Some of our excercises require to perform web requests, POSTMAN is a popular client tool for running HTTP requests. [Download page](https://www.getpostman.com/apps)
 
 ### ✔ 6 Polish Your JS Skills
-Learning Node requires to be familiar with Javascript. Beside mastering the basic principals of JS, it's recommended to get acquaintance with the following advanced concepts:
+Learning Node requires to be familiar with Javascript. Beside mastering the basic principals of JS, it's recommended to get acquaintance with the following concepts that are highly related to Node.JS:
 <br/>
 [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 <br/>
@@ -46,6 +46,20 @@ Learning Node requires to be familiar with Javascript. Beside mastering the basi
 [Callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
 <br/>
 [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+
+### ✔ 7 Ensure Familiarity with Backend Concepts
+It's assumed that all students are familiar with basic web & backend concepts. For example:
+<br/>
+Rest API
+<br/>
+Cookies
+<br/>
+HTTP headers
+<br/>
+JSON
+
+
+
 
 
 
