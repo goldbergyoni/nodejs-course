@@ -33,6 +33,17 @@ Most of our excercises rely on few popular backbone packages that we can install
 ```
 npm install express mocha nyc nodemon faker eslint eslint-plugin-node passport jsonschema jsonwebtoken knex socket.io
 ```
+### ✔ 5 Install POSTMAN
+Some of our excercises require to perform web requests, POSTMAN is a popular client tool for running HTTP requests. [Download page](https://www.getpostman.com/apps)
+
+### ✔ 6 Polish Your JS Skills
+Learning Node requires to be familiar with Javascript. Beside mastering the basic principals of JS, it's recommended to get acquaintance with the following advanced concepts:
+[Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+[Spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+[Callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
+[Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+
+
 
 ## Code Examples
 All the code examples that we run in the classroom [can be found in this Git repository](https://github.com/i0natan/nodebestpractices/tree/course)
