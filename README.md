@@ -38,9 +38,13 @@ Some of our excercises require to perform web requests, POSTMAN is a popular cli
 
 ### ✔ 6 Polish Your JS Skills
 Learning Node requires to be familiar with Javascript. Beside mastering the basic principals of JS, it's recommended to get acquaintance with the following advanced concepts:
+<br/>
 [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+<br/>
 [Spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+<br/>
 [Callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
+<br/>
 [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
 
