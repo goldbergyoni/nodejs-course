@@ -31,7 +31,7 @@ I highly recommend using VSCode editor in the course as it's lightweight and has
 ### ✔ 4 Install The following NPM packages
 Most of our excercises rely on few popular backbone packages that we can install aforehand. Open your terminal (Windows: command prompt) and paste the following command:
 ```
-npm install express mocha nyc nodemon faker eslint eslint-plugin-node passport jsonschema jsonwebtoken knex socket.io
+npm install -g express mocha nyc nodemon faker eslint eslint-plugin-node passport jsonschema jsonwebtoken knex socket.io
 ```
 ### ✔ 5 Install POSTMAN
 Some of our excercises require to perform web requests, POSTMAN is a popular client tool for running HTTP requests. [Download page](https://www.getpostman.com/apps)
