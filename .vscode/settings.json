@@ -1,0 +1,4 @@
+{
+    "mocha.enabled": true,
+    "eslint.enable": true
+}

@@ -1,8 +1,6 @@
 *.log
 .idea
-.vscode
 .idea/**/*
-.vscode/**/*
 .nyc_output
 mochawesome-report
 .DS_Store
