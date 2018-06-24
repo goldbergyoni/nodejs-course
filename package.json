@@ -19,6 +19,8 @@
   "homepage": "https://github.com/i0natan/nodebestpractices#readme",
   "dependencies": {
     "benchmark": "^2.1.4",
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.8.5",
     "body-parser": "1.18.2",
     "clarifai": "^2.5.0",
     "cookie-parser": "1.4.3",
@@ -36,6 +38,8 @@
     "passport-cookie": "1.0.4",
     "passport-http-bearer": "1.0.1",
     "pretty-error": "2.1.1",
+    "progress": "^2.0.0",
+    "reverse-string": "0.0.6",
     "sanitize-html": "^1.11.1",
     "socket.io": "^2.0.4",
     "swagger-jsdoc": "1.9.7",

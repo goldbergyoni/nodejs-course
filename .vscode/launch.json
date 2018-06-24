@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Node WWW",
-            "program": "${workspaceFolder}/bin/www",
+            "program": "${workspaceFolder}/app.js",
             "skipFiles": [
                 "node_modules/**/*.js",
                 "<node_internals>/**/*.js"
@@ -19,7 +19,7 @@
             "request": "launch",
             "name": "nodemon",
             "runtimeExecutable": "nodemon",
-            "program": "${workspaceFolder}/bin/www",
+            "program": "${workspaceFolder}/app.js",
             "restart": true,
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen"
@@ -28,7 +28,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\app.js",
+            "program": "${workspaceFolder}/app.js",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ]

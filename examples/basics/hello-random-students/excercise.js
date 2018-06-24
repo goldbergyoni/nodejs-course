@@ -1,7 +1,5 @@
 const fs = require("fs");
-var terminal = require("terminal-kit").terminal;
-
-let x = 5;
+const reverse = require('reverse-string');
 
 class goodMorning {
   constructor() {}
@@ -9,13 +7,8 @@ class goodMorning {
   bless() {
     fs.readFile("students.txt", "utf-8", function(err, data) {
       const studentsArray = data.split(";");
-      terminal.drawImage(
-        "./goodmorning.jpg",
-        { shrink: { width: 20, height: 20 } },
-        (err, image) => {}
-      );
       studentsArray.forEach(student => {
-        console.log(`Good Morning ${student}!`);
+        console.log(`Good Morning ${reverse(student)}!`);
       });
     });
   }
@@ -23,4 +16,4 @@ class goodMorning {
 
 module.exports = goodMorning;
 
-new goodMorning().bless()
+new goodMorning().bless();

@@ -9,6 +9,7 @@
   "author": "Yoni Goldberg",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^0.7.1-5"
+    "bluebird": "^0.7.1-5",
+    "microtime": "^2.1.8"
   }
 }
