@@ -25,3 +25,17 @@ new studentService().getWinner();
 
 module.exports.studentService = studentService;
 module.exports.number = 1;
+
+
+// const blessed = require('blessed')
+//   , contrib = require('blessed-contrib')
+//   , screen = blessed.screen()
+//   , log = contrib.log(
+//       { fg: "green"
+//       , label: 'students'      
+//       , height: "20%"
+//       , tags: true      
+//       , border: {type: "line", fg: "cyan"} })
+    
+// screen.append(log)
+// setInterval(function() {log.log(studentsArray[i]); i++}, 2000)
