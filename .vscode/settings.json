@@ -1,4 +1,5 @@
 {
     "mocha.enabled": true,
-    "eslint.enable": true
+    "eslint.enable": true,
+    "local-history.enabled": 0
 }
