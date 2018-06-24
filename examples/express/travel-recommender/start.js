@@ -8,13 +8,19 @@ var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-//middleware example
 app.use((req,res,next) =>{
-  next()
+
 })
 
-router.get("/url", (req, res, next) => {  
-  console.log("Request has just started");
+router.post("/api/products", async (req, res, next) => {
+  //my function
+  console.log(`API was called ${util.inspect(req.body)}`);
+  await businessLogic();
+  res.status(200).json({ ok: "yes" });
 });
+
+const businessLogic = async ()=>{
+    return ;
+}
 
 app.use(router);

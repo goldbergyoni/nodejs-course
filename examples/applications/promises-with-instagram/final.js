@@ -52,12 +52,6 @@ function getInstagramURL() {
 
 tellMeWhatToEat();
 
-
-
-
-
-
-
 function identifyFoodWithinSingleImage(instagramPost) {
   const result = [];
   const app = new Clarifai.App({

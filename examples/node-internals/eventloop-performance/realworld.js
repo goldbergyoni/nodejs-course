@@ -37,8 +37,8 @@ router.post('/api/products', async (req, res) => {
 
 app.use(router);
 
-function validateProduct(productToValidate){pm2
-    for(i=0;i<15000;i++){
+function validateProduct(productToValidate){
+    for(i=0;i<50;i++){
         if(!productToValidate.name || !productToValidate.numOfSales){
             return false;
         }        

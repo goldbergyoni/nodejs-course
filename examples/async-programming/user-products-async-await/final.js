@@ -5,19 +5,40 @@ async function getUserProducts(OptionsJSON) {
     const orders = await getOrders(user);
     const products = [];
 
-    console.time("sync")
     const getProductPromises = [];
     orders.forEach(order => {
         getProductPromises.push(getProduct(order.id));
     });
-    console.timeEnd("sync")
+
     return await Promise.all(getProductPromises);
-    
-    
   } catch (error) {
     console.log(error);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function getProduct(orderId) {

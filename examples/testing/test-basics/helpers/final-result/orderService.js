@@ -1,9 +1,6 @@
   class OrderService {
     add(order) {
 
-      if(order){
-        throw new Error()
-      }
     if (!order) throw new Error("Bad boy!");
 
     const result = order;
