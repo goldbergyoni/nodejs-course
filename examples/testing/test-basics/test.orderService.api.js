@@ -2,7 +2,7 @@ const request = require("supertest");
 const sinon = require("sinon");
 const orderDAL = require("./orderService").orderDAL;
 
-describe("Order Service API #hot #api", () => {
+describe.skip("Order Service API #hot #api", () => {
   describe("Adding new", () => {
     it("Under 1000 order, expect to be approved", () => {
       sinon

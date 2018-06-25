@@ -3,7 +3,7 @@ const sinon = require("sinon");
 const orderServiceUnderTest = require("./orderService").orderService;
 const orderDAL = require("./orderService").orderDAL;
 
-describe("Order service", () => {
+describe.skip("Order service", () => {
   describe("Add new order #cold", () => {
     before(() => {  
       sinon
