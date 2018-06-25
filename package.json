@@ -27,6 +27,7 @@
     "countries": "^0.1.1",
     "country-data": "0.0.31",
     "country-list": "^1.1.0",
+    "date-holidays": "^1.2.5",
     "express": "^4.16.2",
     "google": "^2.1.0",
     "jsonschema": "^1.2.0",
