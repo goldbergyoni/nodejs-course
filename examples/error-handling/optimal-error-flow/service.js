@@ -1,4 +1,4 @@
-const CustomError = require("./error-final");
+const {commonErrors, appError} = require('./error-handling-suite')
 
 class ProductsService{
   getProduct(orderId) {
@@ -47,7 +47,7 @@ class ProductsService{
   async getUserProducts(options) {
     const user = await this.logIn("username", "password");
     if (!user) {
-      throw new CustomError(
+      throw new appError(
         "UserDoesntExist",
         404,
         "Unable to get user products",

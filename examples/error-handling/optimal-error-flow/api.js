@@ -1,13 +1,16 @@
 const express = require("express");
 const app = express();
-const ProductService = require("./service-final");
+const ProductService = require("./service");
+const {handler} = require('./error-handling-suite');
 
+//setup
 const port = process.env.PORT || 8080;
 app.listen(port);
 
-
 const router = express.Router();
+app.use(router);
 
+//routes
 router.get("/api/products", async (req, res, next) => {
   try {
     console.log("Get products was invoked");
@@ -17,13 +20,6 @@ router.get("/api/products", async (req, res, next) => {
     next(error);
   }
 });
-app.use(router);
-
-app.use((err, req, res, next) => {
-  console.error('Error middleware was invoked');
-  console.error(err);
-  res.status(err.code).json(err.name);  
-});
 
 
-console.log("Started");
+handler.handleErrors(app);
