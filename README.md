@@ -67,4 +67,7 @@ JSON
 All the code examples that we run in the classroom [can be found in this Git repository](https://github.com/i0natan/nodebestpractices/tree/course)
 
 ## Slides
-Feel free to approach me (here, by email or via Twitter) to get a copy of the course slides
+Download the slides here: 
+https://github.com/i0natan/nodejs-course/blob/master/node.js%20course%20for%20GitHub.pptx
+
+Note: The slides were meant as complementary material to an onsite course
