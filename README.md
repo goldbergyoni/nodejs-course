@@ -35,6 +35,10 @@ Some of our excercises require to perform web requests, POSTMAN is a popular cli
 
 ### ✔ 5 Polish Your JS Skills
 Learning Node requires to be familiar with Javascript. Beside mastering the basic principals of JS, it's recommended to get acquaintance with the following concepts that are highly related to Node.JS:
+[10 min JavaScript crash course](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+<br/>
+[Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+<br/>
 [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 <br/>
 [Async/await](https://javascript.info/async-await)
@@ -52,8 +56,6 @@ Learning Node requires to be familiar with Javascript. Beside mastering the basi
 [The basics of TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 <br/>
 [Express web framework - hello world](https://codeburst.io/getting-started-with-expressjs-3cbb279bd5e6)
-
-
 
 
 ### ✔ 6 Ensure Familiarity with Backend Concepts
