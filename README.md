@@ -19,7 +19,7 @@ This repository holds various materials, demos and instructions for my Node.JS c
 ## Preparation
 As we meet in the classroom we wish to spend our precious time on interesting development challenges rather than machine setup. Make sure to prepare your machine aforehand. Should you encounter any issue - please open an issue within this repo and I'll be sure to assist shortly
 
-### ✔ 1 Install Node.JS v8.9.x
+### ✔ 1 Install Node.JS LTS
 Install Node.JS LTS (any 12.0.X version) [from this website](https://nodejs.org/en/) - just download and progress within the installation wizard
 
 
