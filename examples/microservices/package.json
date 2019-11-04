@@ -35,7 +35,7 @@
     "joi": "13.0.2",
     "jsonschema": "^1.2.0",
     "jsonwebtoken": "^8.1.0",
-    "knex": "^0.14.0",
+    "knex": "^0.20.1",
     "loadtest": "^2.3.0",
     "logger": "file:libraries/logger",
     "messageQueue": "file:libraries/messageQueue",
