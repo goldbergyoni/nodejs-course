@@ -7,7 +7,6 @@ function getUserProducts(OptionsJSON, callback) {
       }
 
       getOrders(user.username, (error, orders) => {
-        process.stdout.w
         if (error) {
           return callback(error, null);
         }

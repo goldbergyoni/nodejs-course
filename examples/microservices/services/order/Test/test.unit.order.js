@@ -1,6 +1,11 @@
 const Order = require('./../order')
 const expect = require('chai').expect
 
+//this runs before tests are executed
+before(()=>{
+    await ourTestingFramework.seed.run('./seedData.json');
+})
+
 it('Check valid order, expect get positive result', ()=>{
     const newOrder = new Order(0, 1 , 2 , 'New', new Date());
     const result = newOrder.validate();
@@ -13,11 +18,34 @@ it('Check order with inalid user, expect negative result', ()=>{
     expect(result).to.be.false
 })
 
+test('When adding new product with a valid product name, expect it to be approved ', () => {
+    //Arrange
+    const productToTestWith = new Product(faker.randomize.productName);
+    //faker=randomize true product names, anytime a different name will be used
+    const productServiceUnderTest = new productService();
+
+    //Act
+    const productAddResult = productServiceUnderTest.add(productToTestWith);
+
+    //Assert
+    expect(productAddResult).toBe("approved");
+});
+
+test('When adding new product with a valid product name, expect it to be approved', () => {
+    //Arrange
+    const productToTestWith = new Product("iPhone");
+    const productServiceUnderTest = new productService();
+
+    //Act
+    const productAddResult = productServiceUnderTest.add(productToTestWith);
+
+    //Assert
+    expect(productAddResult).toBe("approved");
+});
 
 
 
-
-
+    
 
 
 

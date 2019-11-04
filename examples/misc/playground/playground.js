@@ -1,6 +1,6 @@
 class doo{
   boo(a , b){
-    console.log(this.arguments)
+    console.log(this.arguments);
   }
 }
 

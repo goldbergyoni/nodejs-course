@@ -4,11 +4,11 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
 console.log(`About to listen to port ${process.env.PORT}`);
-http.listen(process.env.PORT, function () {
+http.listen(8090, function () {
     console.log('listening on *:8080')
 });
 
-app.use(express.static('assets'))
+app.use(express.static('public'))
 
 var router = express.Router();
 router.get('/healthcheck', function(req, res) {
