@@ -30,7 +30,7 @@ Open your favourite terminal (Windows: command prompt) and type 'NPM verson'. Th
 Run the command:
 
 ```
-git clone https://github.com/goldbergyoni/nodejs-course/edit/master/README.md
+git clone https://github.com/goldbergyoni/nodejs-course/
 ```
 
 Then navigate into the project directory and install all depedencies:
