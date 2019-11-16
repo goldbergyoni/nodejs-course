@@ -26,6 +26,19 @@ Install Node.JS LTS (any 12.0.X version) [from this website](https://nodejs.org/
 ### ✔ 2 Ensure Node is installed correctly
 Open your favourite terminal (Windows: command prompt) and type 'NPM verson'. The output should confirm that version (e.g. 12.0) is indeed installed
 
+### ✔ 3 Clone this repo
+Run the command:
+
+```
+git clone https://github.com/goldbergyoni/nodejs-course/edit/master/README.md
+```
+
+Then navigate into the project directory and install all depedencies:
+```
+npm install
+```
+
+
 ### ✔ 3 Install IDE (editor)
 I highly recommend using VSCode editor in the course as it's lightweight and has a very rich plugins eco-sysem that we might use during our excercise. Simply visit the [downloads site](https://code.visualstudio.com/download) and choose the edition that suits your operations system. You may opt for any other editor that supports Node debugging and intellisense
 
