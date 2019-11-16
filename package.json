@@ -4,7 +4,7 @@
   "description": "[✔]: assets/images/checkbox-small-blue.png",
   "main": "app.js",
   "scripts": {
-    "start": "node ./services/examples/slow-fast.js",
+    "start": "node ./examples/async-programming/excercise-2.1-travel-recommend/final.js",
     "test": "mocha **/test.unit*.js"
   },
   "repository": {
