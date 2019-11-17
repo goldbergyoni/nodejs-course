@@ -5,12 +5,10 @@ function getUserProducts(OptionsJSON, callback) {
       if (error) {
         return callback(error, null);
       }
-
       getOrders(user.username, (error, orders) => {
         if (error) {
           return callback(error, null);
         }
-
         const result = [];
         let count = 0;
         orders.forEach(order => {
