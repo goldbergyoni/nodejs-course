@@ -26,14 +26,27 @@ Install Node.JS LTS (any 12.0.X version) [from this website](https://nodejs.org/
 ### ✔ 2 Ensure Node is installed correctly
 Open your favourite terminal (Windows: command prompt) and type 'NPM verson'. The output should confirm that version (e.g. 12.0) is indeed installed
 
-### ✔ 3 Install IDE (editor)
+### ✔ 3 Clone this repo
+Run the command:
+
+```
+git clone https://github.com/goldbergyoni/nodejs-course/
+```
+
+Then navigate into the project directory and install all depedencies:
+```
+npm install
+```
+
+
+### ✔ 4 Install IDE (editor)
 I highly recommend using VSCode editor in the course as it's lightweight and has a very rich plugins eco-sysem that we might use during our excercise. Simply visit the [downloads site](https://code.visualstudio.com/download) and choose the edition that suits your operations system. You may opt for any other editor that supports Node debugging and intellisense
 
 
-### ✔ 4 Install POSTMAN
+### ✔ 5 Install POSTMAN
 Some of our excercises require to perform web requests, POSTMAN is a popular client tool for running HTTP requests. [Download page](https://www.getpostman.com/apps)
 
-### ✔ 5 Polish Your JS Skills
+### ✔ 6 Polish Your JS Skills
 Learning Node requires to be familiar with Javascript. Beside mastering the basic principals of JS, it's recommended to get acquaintance with the following concepts that are highly related to Node.JS:
 <br/>
 [10 min JavaScript crash course](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
@@ -59,7 +72,7 @@ Learning Node requires to be familiar with Javascript. Beside mastering the basi
 [Express web framework - hello world](https://codeburst.io/getting-started-with-expressjs-3cbb279bd5e6)
 
 
-### ✔ 6 Ensure Familiarity with Backend Concepts
+### ✔ 7 Ensure Familiarity with Backend Concepts
 It's assumed that all students are familiar with basic web & backend concepts. For example:
 <br/>
 Rest API
