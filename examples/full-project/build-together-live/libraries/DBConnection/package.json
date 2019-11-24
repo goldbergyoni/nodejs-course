@@ -1,15 +1,14 @@
 {
-  "name": "order",
+  "name": "db-connection",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "db-connection": "1.0.0",
-    "web-middlewares": "1.0.0"
-  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "^5.21.2"
+  }
 }

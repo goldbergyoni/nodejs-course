@@ -1,5 +1,7 @@
 const util = require('util')
 const order = require('./order')
+const OrderRepository = require('../data-access/order-repository')
+
 
 //📗 Additional info: 
 //This can be all we need to code a small Microservice
@@ -14,7 +16,9 @@ module.exports = {
         const validationResult = orderToAdd.validate();
         if (!validationResult.succeeded) {
             throw new Error(`Validation failed ${util.inspect(validationResult.errors)}`);
-        }
+        };
+        await new OrderRepository().addOrder(orderToAdd);
+        return;
     },
 
     getOrder: () => {

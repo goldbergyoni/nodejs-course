@@ -25,7 +25,7 @@
 - 5.8: Anti-pattern: singleton class
 - 5.9: some logic
 - 5.10: why we need entity, dynamic json return anti-pattern
--
+- 
 
 # 7. Build Entity
 
@@ -38,10 +38,12 @@
 - 7.17: avoid active record
 
 # 10. Repository
-
 - 10.3: ORM or not
 - 10.5 The repository interface
 - 10.7: Models
 - 10.10 centralized connection
-- 10.13: avoid sync
+- 10.13: avoid sync, show migrations
 - 10.17: lean queries
+
+# 13. Calls to 3rd parties
+- 13.3: Which layer?
