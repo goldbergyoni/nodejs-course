@@ -13,7 +13,6 @@
 //1. Aim for async/await and flat code
 //2. Separate into at least two files: index.js & core logic
 
-
 const util = require("util");
 const Holidays = require("date-holidays");
 const weather = require("weather-js");

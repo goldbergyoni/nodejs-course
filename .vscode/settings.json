@@ -1,5 +1,6 @@
 {
     "mocha.enabled": true,
     "eslint.enable": true,
-    "local-history.enabled": 0
+    "local-history.enabled": 0,
+    "git.ignoreLimitWarning": true
 }
