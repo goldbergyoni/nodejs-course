@@ -1,13 +1,10 @@
-const util = require('util')
-const order = require('./order')
-const OrderRepository = require('../data-access/order-repository')
-
+const util = require('util');
+const OrderRepository = require('../data-access/order-repository');
 
 //📗 Additional info: 
 //This can be all we need to code a small Microservice
 //or a facade to other services
 //or an orchestrator of other services
-
 
 
 module.exports = {
@@ -17,17 +14,11 @@ module.exports = {
         if (!validationResult.succeeded) {
             throw new Error(`Validation failed ${util.inspect(validationResult.errors)}`);
         };
-        await new OrderRepository().addOrder(orderToAdd);
-        return;
+
+        return await new OrderRepository().addOrder(orderToAdd);
     },
 
-    getOrder: () => {
-        //❌ Anti-Pattern: no clear definition of schema? 
-        //harder to validate, reuse and reason about 😓
-        return {
-            userId: 1,
-            productId: 2,
-            price: 100
-        };
+    getOrders: async () => {
+        return await new OrderRepository().getOrders();
     }
 }

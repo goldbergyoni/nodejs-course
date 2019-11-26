@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize');
 const dbConnection = require('db-connection');
 
-const DBModel = {
-  define: async () => {
-    const dbAccess = new dbConnection('localhost', 'bestpracticesshop', 'shopuser', 'shop@1');
+function DBModel() {
+  this.define = () => {
+    const dbAccess = new dbConnection('localhost', 'shop', 'myuser', 'myuserpassword');
 
     const Order = dbAccess.sequelizeDBReference.define("order", {
       id: {
@@ -28,11 +28,14 @@ const DBModel = {
         type: Sequelize.STRING
       }
     });
-    Order.sync();
+
+    //❌ Anti-Pattern: Synchronize the code models with the physical DB
+    //😱 might delete columns and data
+    //Order.sync();
 
     return Order;
 
   }
 }
 
-module.exports = DBModel;
+module.exports = new DBModel();
