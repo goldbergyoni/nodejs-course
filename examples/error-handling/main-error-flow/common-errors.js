@@ -1,4 +1,4 @@
-const AppError = require("./error");
+const AppError = require("./error-final");
 
 module.exports = {
   InvalidInputError: (message, name = null, innerException = null) =>

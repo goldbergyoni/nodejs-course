@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "bluebird": "^0.7.1-5",
-    "microtime": "^2.1.8"
+    "microtime": "^2.1.8",
+    "pretty-error": "^2.1.1"
   }
 }

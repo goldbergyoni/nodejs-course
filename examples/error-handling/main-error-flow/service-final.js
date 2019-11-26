@@ -1,6 +1,9 @@
-const {commonErrors, appError} = require('./error-handling-suite')
+const {
+  commonErrors,
+  appError
+} = require('./error-handling-suite');
 
-class ProductsService{
+class ProductsService {
   getProduct(orderId) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -10,7 +13,7 @@ class ProductsService{
       }, 100);
     });
   }
-  
+
   getTranslatedProduct(orderId) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -20,12 +23,11 @@ class ProductsService{
       }, 100);
     });
   }
-  
+
   getOrders(username) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve([
-          {
+        resolve([{
             id: 1
           },
           {
@@ -35,7 +37,7 @@ class ProductsService{
       }, 100);
     });
   }
-  
+
   logIn(user, password, callback) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -43,7 +45,7 @@ class ProductsService{
       }, 100);
     });
   }
-  
+
   async getUserProducts(options) {
     const user = await this.logIn("username", "password");
     if (!user) {
@@ -51,18 +53,18 @@ class ProductsService{
         "UserDoesntExist",
         404,
         "Unable to get user products",
-        true
+        false
       );
     }
-  
+
     const orders = await this.getOrders(user);
     const products = [];
-  
+
     for (i = 0; i < orders.length; i++) {
       const productToAdd = await this.getProduct(orders[i].id);
       products.push(productToAdd);
     }
-  
+
     return products;
   }
 }

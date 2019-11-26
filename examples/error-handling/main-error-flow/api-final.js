@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const ProductService = require("./service");
+const ProductService = require("./service-final");
 const {handler} = require('./error-handling-suite');
 
 //setup
