@@ -10,6 +10,7 @@ class TravellingRecommenderService {
         }, 70000);
     }
 
+    //All the logic of checking a location is here
     async isTravellingRecommended(desiredLocation) {
         //input: {city: 'Bangkok' , date: '01/01/2020'}
         console.log(`Is recommended service just got a new search ${util.inspect(desiredLocation)}`);
