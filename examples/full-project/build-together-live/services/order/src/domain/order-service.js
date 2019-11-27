@@ -1,5 +1,9 @@
 const util = require('util');
+const {
+    getNamespace
+} = require('cls-hooked');
 const OrderRepository = require('../data-access/order-repository');
+
 
 //📗 Additional info: 
 //This can be all we need to code a small Microservice
@@ -9,13 +13,17 @@ const OrderRepository = require('../data-access/order-repository');
 
 module.exports = {
     addOrder: async (orderToAdd) => {
-        console.log(orderToAdd);
+        const session = getNamespace('request');
+        session.get('requestId');
+        console.log(`Order service is about to add order ${session.get('requestId')}`)
         const validationResult = orderToAdd.validate();
         if (!validationResult.succeeded) {
             throw new Error(`Validation failed ${util.inspect(validationResult.errors)}`);
         };
 
-        return await new OrderRepository().addOrder(orderToAdd);
+        const newOrder = await new OrderRepository().addOrder(orderToAdd);
+        console.log(`Order service just finiehed adding order ${session.get('requestId')}`)
+        return newOrder;
     },
 
     getOrders: async () => {

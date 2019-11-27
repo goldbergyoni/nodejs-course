@@ -6,18 +6,19 @@ const Sequelize = require("sequelize");
 //this is the hot concurrent reference to the DB, it should be kept private and singleton
 let _sequelizeDBReference = null;
 
-class DBAccess{
-  constructor(hostAddress, dbName, userName, password){
-    console.log(`DB access`, hostAddress, dbName, userName);
-    _sequelizeDBReference = new Sequelize(dbName, userName, password, this.getSequelizeConfig(hostAddress));    
+class DBAccess {
+  constructor() {
+    //❌ Anti-Pattern: credentials are stored in code
+    _sequelizeDBReference = new Sequelize('shop', 'myuser', 'myuserpassword', this.getSequelizeConfig('localhost'));
   }
 
-  get sequelizeDBReference(){
+  //✅ Best Practice: One connection per process, make it a singleton
+  get sequelizeDBReference() {
     return _sequelizeDBReference;
   }
 
   //allow this soon to get config section from configurable json
-  getSequelizeConfig(hostAddress){
+  getSequelizeConfig(hostAddress) {
     return {
       host: hostAddress,
       dialect: "postgres",
@@ -32,4 +33,4 @@ class DBAccess{
   }
 }
 
-module.exports =  DBAccess;
+module.exports = DBAccess;

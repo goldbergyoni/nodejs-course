@@ -1,5 +1,7 @@
 const dbModel = require('./db-model')
 
+//✅ Best Practice: Separate the DB from the domain
+//using the repository pattern
 function OrderRepository() {
 
     this.orderDBModel = dbModel.define();

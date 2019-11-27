@@ -3,7 +3,7 @@ const dbConnection = require('db-connection');
 
 function DBModel() {
   this.define = () => {
-    const dbAccess = new dbConnection('localhost', 'shop', 'myuser', 'myuserpassword');
+    const dbAccess = new dbConnection();
 
     const Order = dbAccess.sequelizeDBReference.define("order", {
       id: {
